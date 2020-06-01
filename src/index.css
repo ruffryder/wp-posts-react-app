@@ -4,12 +4,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* CSS variables used in project */
+:root {
+  --primary-color: #674172;
+  --main-white: #efefef;
+  --secondary-font: "Amaranth";
+}
+
 /* Make 1rem be equal to 10px for easier sizing */
 html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .container {
+  max-width: 120rem;
+  margin: 8rem auto 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

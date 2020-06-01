@@ -1,0 +1,8 @@
+.main-header {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.main-header__title {
+  font-size: 3.6rem;
+}
