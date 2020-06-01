@@ -21,6 +21,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto 0;

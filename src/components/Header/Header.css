@@ -1,6 +1,8 @@
 .main-header {
   margin-top: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-header__title {
