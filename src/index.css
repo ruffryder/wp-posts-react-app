@@ -1,0 +1,16 @@
+/* Basic CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Make 1rem be equal to 10px for easier sizing */
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
