@@ -7,9 +7,9 @@ import PostsList from "./components/PostsList/PostsList";
 import Button from "./components/UI/Button/Button";
 import Footer from "./components/Footer/Footer";
 import LoadingSpinner from "./components/UI/LoadingSpinner/LoadingSpinner";
-import PostDetails from "./components/PostDetails/PostDetails";
+import PostsDetailsList from "./components/PostsDetailsList/PostsDetailsList";
 
-/* eslint-disable react/no-unused-state, no-console */
+/* eslint-disable no-console */
 class App extends Component {
   constructor(props) {
     super(props);
@@ -94,7 +94,7 @@ class App extends Component {
                 </>
               )}
             />
-            <Route path="/post/:id" component={PostDetails} />
+            <Route path="/post/:id" component={PostsDetailsList} />
           </Switch>
           {isLoading ? <LoadingSpinner /> : null}
         </div>

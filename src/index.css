@@ -9,6 +9,7 @@
 :root {
   --primary-color: #674172;
   --main-white: #efefef;
+  --main-grey: #bfbfbf;
   --secondary-font: "Amaranth";
 }
 
@@ -32,6 +33,7 @@ img {
 
 .container {
   max-width: 120rem;
+  min-height: 100vh;
   margin: 8rem auto 0;
   display: flex;
   justify-content: space-around;

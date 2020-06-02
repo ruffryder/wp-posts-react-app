@@ -1,0 +1,33 @@
+.post-details {
+  width: 75%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+}
+
+.post-details__title {
+  font-size: 3.2rem;
+  padding: 1.2rem;
+}
+
+.post-details__thumbnail {
+  width: 50%;
+  margin: 4rem auto;
+}
+
+.post-details__content {
+  text-align: left;
+}
+
+.post-details__content h2 {
+  padding: 2.5rem 0 1.2rem;
+}
+
+.post-details__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--main-grey);
+}
