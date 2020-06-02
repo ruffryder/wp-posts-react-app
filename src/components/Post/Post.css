@@ -1,5 +1,5 @@
 .post {
-  width: 30%;
+  width: 90%;
   padding: 2rem;
   margin: 1rem 1.2rem;
   display: flex;
@@ -26,4 +26,15 @@
 .post__excerpt {
   font-family: sans-serif;
   font-family: var(--secondary-font);
+}
+
+@media screen and (min-width: 670px) {
+  .post {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .post {
+    width: 30%;
+  }
 }
