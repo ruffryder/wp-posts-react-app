@@ -7,7 +7,7 @@
   justify-content: center;
   border: 2px solid var(--primary-color);
   cursor: pointer;
-  color: #000;
+  color: var(--main-black);
 }
 
 .post__title {
@@ -19,7 +19,7 @@
   width: 60%;
   max-width: 100%;
   padding: 1rem;
-  border: 1px solid #000;
+  border: 1px solid var(--main-black);
   margin: 1rem auto;
 }
 

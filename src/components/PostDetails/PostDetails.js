@@ -13,7 +13,6 @@ function PostDetails({ post }) {
   const postContent = post.content.rendered;
   const postAuthor = post.author;
   const postDate = post.date;
-  console.log(postDate);
   const postTitle = post.title.rendered;
   // Sanitize the received HTML with sanitizeHtml() function
   const sanitizedPostContent = sanitizeHtml(postContent, {
