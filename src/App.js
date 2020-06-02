@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Switch, Route } from "react-router-dom";
 import * as constants from "./constants";
 import Header from "./components/Header/Header";
 import PostsList from "./components/PostsList/PostsList";
 import Button from "./components/UI/Button/Button";
 import Footer from "./components/Footer/Footer";
 import LoadingSpinner from "./components/UI/LoadingSpinner/LoadingSpinner";
+import PostDetails from "./components/PostDetails/PostDetails";
 
 /* eslint-disable react/no-unused-state, no-console */
 class App extends Component {
@@ -76,13 +78,24 @@ class App extends Component {
       <>
         <div className="container">
           <Header />
-          <PostsList posts={posts} />
-          {showLoadMorePostsButton ? (
-            <Button
-              textValue="Load more posts"
-              clickHandler={this.handleLoadMorePosts}
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={() => (
+                <>
+                  <PostsList posts={posts} />
+                  {showLoadMorePostsButton ? (
+                    <Button
+                      textValue="Load more posts"
+                      clickHandler={this.handleLoadMorePosts}
+                    />
+                  ) : null}
+                </>
+              )}
             />
-          ) : null}
+            <Route path="/post/:id" component={PostDetails} />
+          </Switch>
           {isLoading ? <LoadingSpinner /> : null}
         </div>
         <Footer />

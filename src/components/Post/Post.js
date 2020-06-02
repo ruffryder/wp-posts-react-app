@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import sanitizeHtml from "sanitize-html";
 import extractPostThumbnail from "./postUtils";
 import "./Post.css";
@@ -18,14 +19,14 @@ function Post({ post }) {
   });
   const sanitizedPostTitle = sanitizeHtml(postTitle, { allowedTags: [""] });
   return (
-    <div className="post">
+    <Link to={`/post/${post.id}`} className="post">
       <h2 className="post__title">{sanitizedPostTitle}</h2>
       <img className="post__thumbnail" src={postUrl} alt={sanitizedPostTitle} />
       <div
         className="post__excerpt"
         dangerouslySetInnerHTML={{ __html: sanitizedPostExcerpt }}
       />
-    </div>
+    </Link>
   );
 }
 

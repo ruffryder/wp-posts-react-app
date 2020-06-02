@@ -7,6 +7,7 @@
   justify-content: center;
   border: 2px solid var(--primary-color);
   cursor: pointer;
+  color: #000;
 }
 
 .post__title {
