@@ -17,7 +17,7 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "axios": "^0.19.2",
     "html-react-parser": "^0.10.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
